@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Startups - InovaTec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/e927f66316.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+        font-family: rawline, sans-serif !important;
+    }
+
+    .gov {
+        background-color: #204C90;
+        margin: 0px;
+    }
+    .gov td {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    .gov td a {
+        font-family: rawline, sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .nav-table:hover td a{
+        opacity: 0.3;
+    }
+    .nav-table td a:hover,
+    .nav-table td a:focus {
+        opacity: 100;
+        color: white;
+    }
+
+    .navbar-gov{
+        background-color: #204C90;
+        border-top: 1px solid #6382B2;
+        border-bottom: 1px solid #997420;
+    }
+    .navbar-gov li a{
+        color: white;
+        font-family: rawline, sans-serif !important;
+        font-size: 11.2px;
+        font-weight: 700;
+    }
+    .navbar-gov ul:hover a{
+        opacity: 0.3;
+    }
+    .navbar-gov li a:hover{
+        opacity: 100;
+        color: white;
+    }
+    .navbar-gov li a:focus{
+        border-width: 2px;
+        border-style: dotted;
+        border-color: black;
+        color:white;
+    }
+
+    .border-md-right{
+        border-right: 1px solid rgba(151,151,151,0.3);
+    }
+
+    .second-bar{
+        background-color: #21376B;
+        height: 40px;
+    }
+    .second-item{
+        color: white;
+        font-size: 12px;
+    }
+    .second-item:hover{
+        color: white;
+        text-decoration: underline white;
+    }
+    .second-item:focus{
+        color: white;
+        border-width: 2px;
+        border-style: dotted;
+        border-color: black;
+    }
+
+    .third-bar{
+        background-color: #21376B;
+        height: 64px;
+    }
+    .third-bar a{
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+    }
+    .third-bar a:hover{
+        color: white;
+        text-decoration: underline white;
+    }
+    .third-bar a:focus{
+        color: white;
+        border-width: 2px;
+        border-style: dotted;
+        border-color: black;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .p-link{
+        color:white;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .p-link:hover{
+        color:white;
+        text-decoration: underline white;
+    }
+    .p-link:focus{
+        color: white;
+        border-width: 2px;
+        border-style: dotted;
+        border-color: black;
+    }
+
+    .inova-header{
+        background-color: #21376B;
+        color: white;
+        border-bottom: 1px solid #4D5F89;
+    }
+
+    .inova-empresas{
+        border-bottom: 5px solid #D2DBE9;
+    }
+
+    .inova-footer{
+        background-color:#21376B;
+        color:white;
+    }
+
+    .inova-menu li a{
+        color: #21376b;
+    }
+
+    .inova-menu li a:hover{
+        color: #21376b;
+        text-decoration: underline #21376b;
+    }
+    .inova-menu li a:focus{
+        color: #21376b;
+        border-width: 2px;
+        border-style: dotted;
+        border-color: black;
+    }
+    .inova-menu ul{
+        list-style-type: none;
+    }
+
+    .nome-empresa{
+        background-color: grey;
+        border-radius: 25px;
+        font-size: 26.488px;
+        margin: 20px
+    }
+
+    .last-footer{
+        background-color: #204C90;
+        border-top: 1px solid #997420;
+        height: auto;
+    }
+
+  </style>
+</head>
+<body>
+    <div id="orgaos_governo" class="collapse gov">
+        <div class="container-fluid">
+            <table class="table-borderless nav nav-table">
+                <tr>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.casacivil.gov.br/">Casa Civil</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.justica.gov.br/">Ministério da Justiça e Segurança Pública</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="https://www.defesa.gov.br/">Ministério da Defesa</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.itamaraty.gov.br/">Ministério das Relações Exteriores</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.economia.gov.br/">Ministério da Economia</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.infraestrutura.gov.br/">Ministério da Infraestrutura</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.agricultura.gov.br/">Ministério da Agricultura, Pecuária e Abastecimento</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.mec.gov.br/">Ministério da Educação</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://cidadania.gov.br/">Ministério da Cidadania</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://saude.gov.br/">Ministério da Saúde</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.mme.gov.br/">Ministério de Minas e Energia</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.mctic.gov.br/">Ministério da Ciência, Tecnologia Inovações e Comunicações</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.mma.gov.br/">Ministério do Meio Ambiente</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.turismo.gov.br/">Ministério do Turismo</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.integracao.gov.br/">Ministério do Desenvolvimento Regional</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.cgu.gov.br/">Controladoria-Geral da União</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.mdh.gov.br/">Ministério da Mulher, da Família e dos Direitos Humanos</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.secretariageral.gov.br/">Secretaria-Geral</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.secretariadegoverno.gov.br/">Secretaria de Governo</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.gsi.gov.br/">Gabinete de Segurança Institucional</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.agu.gov.br/">Advocacia-Geral da União</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.bcb.gov.br/">Banco Central do Brasil</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="http://www.gov.br/planalto">Planalto</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm navbar-gov">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://gov.br/" title="GovBR"><img src="data:image/svg+xml,%3Csvg%20width%3D%2250%22%20height%3D%2219%22%20version%3D%221.1%22%20viewBox%3D%220%200%2019%2050%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20transform%3D%22matrix%28.23%200%200%20.23%20-153%20-147%29%22%3E%3Cg%20transform%3D%22matrix%281.3%200%200%201.3%20-200%20-209%29%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22m576%20765c0%2034-17%2046-50%2046-14%200-25-2.9-32-5.3l1.4-23c8.8%204.3%2016%206.9%2028%206.9%2017%200%2026-7.9%2026-24v-4.5h-.32c-6.9%209.8-17%2014-28%2014-23%200-37-17-37-42%200-25%2012-44%2038-44%2012%200%2022%206.8%2028%2017h.32v-15h26v74m-46-12c10%200%2018-8.7%2018-22%200-9.3-5.5-20-18-20-11%200-16%209.5-16%2021%200%2013%207.7%2020%2016%2020z%22%2F%3E%3Cpath%20d%3D%22m662%20686h28l22%2062%2022-62h28l-35%2089h-31l-34-89%22%2F%3E%3Cpath%20d%3D%22m576%20732c0-28%2021-44%2049-44s49%2016%2049%2044c0%2028-21%2044-49%2044-28%200-49-16-49-44m68%200c0-13-5.5-24-19-24s-19%2011-19%2024c0%2012%205.5%2024%2019%2024s19-11%2019-24z%22%2F%3E%3Cpath%20d%3D%22m760%20762c0%207.6-6.2%2014-14%2014-7.6%200-14-6.2-14-14%200-7.6%206.2-14%2014-14%207.6%200%2014%206.2%2014%2014z%22%2F%3E%3Cpath%20d%3D%22m762%20654h29v48h.32c7.4-9.3%2017-13%2029-13%2023%200%2036%2022%2036%2042%200%2025-13%2045-38%2045-13%200-25-7.6-29-17h-.32v15h-27v-121m47%2057c-11%200-18%209.3-18%2022%200%2012%208%2021%2018%2021%2011%200%2018-9.2%2018-22%200-11-6.3-21-18-21z%22%2F%3E%3Cpath%20d%3D%22m916%20714c-3.2-.97-6.4-.97-9.8-.97-14%200-21%209.8-21%2026v35h-29v-84h26v15h.32c5-11%2012-17%2025-17%203.4%200%206.9.48%209.8.96l-1.4%2024z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item border-md-right"><a class="nav-link" href="http://www.saude.gov.br/coronavirus" style="color:#ff6666; font-size: 13.6px">CORONAVÍRUS (COVID-19)</a></li>
+                <li class="nav-item border-md-right"><a class="nav-link" href="http://www.acessoainformacao.gov.br/">ACESSO À INFORMAÇÃO</a></li>
+                <li class="nav-item border-md-right"><a class="nav-link" href="https://www.gov.br/pt-br/participacao-social/">PARTICIPE</a></li>
+                <li class="nav-item border-md-right"><a class="nav-link" href="http://www4.planalto.gov.br/legislacao/">LEGISLAÇÃO</a></li>
+                <li><a class="nav-link" href="#orgaos_governo" data-bs-toggle="collapse">ÓRGÃOS DO GOVERNO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm second-bar">
+        <div class="container-fluid">
+            <a class="navbar-brand"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle second-item" href="#" role="button" data-bs-toggle="dropdown">
+                        <i aria-hidden="true" class="fas me-1 fa-globe-americas d-none d-sm-inline-block"></i>
+                        LANGUAGES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">PORTUGUÊS</a></li>
+                      <li><a class="dropdown-item" href="#">ENGLISH</a></li>
+                      <li><a class="dropdown-item" href="#">ESPAÑOL</a></li>
+                      <li><a class="dropdown-item" href="#">FRANÇAIS</a></li>
+                      <li><a class="dropdown-item" href="#">ITALIANO</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item border-md-right"><a class="nav-link second-item" href="https://www.ufsm.br/orgaos-suplementares/inovatec/startups#">ACESSIBILIDADE</a></li>
+                <li class="nav-item border-md-right"><a class="nav-link second-item" href="https://www.ufsm.br/sitios-da-ufsm">SÍTIOS DA UFSM</a></li>
+                <li class="nav-item"><a class="nav-link second-item" href="https://www.ufsm.br/orgaos-suplementares/inovatec/wp-admin/">ÁREA RESTRITA</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row inova-header p-3">
+            <div class="col-sm-1 text-center">
+                <img class="img-fluid" style="max-height:128px; margin-top: 8px; margin-bottom: 8px;" src="https://www.ufsm.br/app/themes/ufsm/images/brasao.svg" alt="Logotipo UFSM">
+            </div>
+            <div class="col-sm-5 text-left">
+                <br>
+                <h1 style="font-size: 36px;">InovaTec</h1>
+                <p style="font-size: 16px">Parque de Inovação, Ciência e Tecnologia</p>
+            </div>
+            <div class="col-sm-3 text-left">
+            </div>
+            <div class="col-sm-3 text-left">
+                <br><br><br>
+                <a class="p-link border-md-right" href="#">
+                    <i class="fa fa-fw fa-adjust" aria-hidden="true"></i>
+                    Alto Contraste
+                </a>
+                <a class="p-link" href="http://www.vlibras.gov.br/">
+                    <i class="fa fa-fw fa-sign-language" aria-hidden="true"></i>
+                    VLibras
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm third-bar">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item" ><a class="nav-link" href="#menu_inovatec" data-bs-toggle="collapse">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    Menu
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/pulsar">Pulsar Incubadora</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/noticias">Notícias</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/contato">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/gestores-do-sitio">Gestores de Sítio</a></li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Buscar no Sítio">
+                <button class="btn btn-primary" type="button">Buscar</button>
+              </form>
+        </div>
+    </nav>
+
+    <div id="menu_inovatec" class="collapse inova-menu">
+        <div class="container-fluid" style="margin-top: 20px;">
+            <div class="row" style="border-bottom: 1px solid black;">
+                <div class="col-sm-3">
+                    <a style="font-size: 16px; font-weight:700;">InovaTec</a>
+                    <ul class="navbar-nav" style="margin-left: 10px;">
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/">Pagina inicial</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/quero-fazer-parte">Quero fazer parte</a>
+                          <ul class="sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/edital-associadas">Edital Associados</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/foodtech-fablabs">FoodTech FabLab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/advanced-farm-360-living-lab">Advanced Farm 360 Living Lab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/inovatec-team">InovaTec Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <a style="font-size: 16px; font-weight:700;">Incubadora</a>
+                    <ul class="navbar-nav" style="margin-left: 10px;">
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/pulsar">Pulsar Incubadora</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/programa-eleva-start">Programa Eleva Start 2023</a>
+                        </li>
+                        <li class="nav-item" style="background-color: #D5F1FF; border-right: 2px solid #21376B;">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/startups">Startups</a>
+                          <ul class="sub-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/vagas-nas-startups">Vagas nas startups</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/graduadas">Empresas Graduadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/agendamentos">Agende nossos espaços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/quero-empreender">Quero empreender</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <a style="font-size: 16px; font-weight:700;">Informações</a>
+                    <ul class="navbar-nav" style="margin-left: 10px;">
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/newsletter">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/eventos">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/noticias">Notícias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/editais">Editais</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/documentos">Documentos</a>
+                        </li>
+                    </ul>
+                    <a style="font-size: 16px; font-weight:700;">Contato</a>
+                    <ul class="navbar-nav" style="margin-left: 10px;">
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://www.ufsm.br/orgaos-suplementares/inovatec/contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row" style="border-bottom: 3px solid #E0E6F0">
+                <div class="col-sm-12">
+                    <a style="font-size: 16px; font-weight:700; margin-top:10px;">Redes Sociais</a>
+                    <p style="font-size: 20px; font-weight: 500; color: #21376b;">
+                        <a style="text-decoration: none;" href="https://www.instagram.com/inovatec.ufsm/">
+                            <i class='fab fa-instagram' style='font-size:36px'></i>
+                        </a>
+                        <a style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=100085755794293">
+                            <i class='fab fa-facebook-square' style='font-size:36px'></i>
+                        </a>
+                        <a style="text-decoration: none;" href="https://www.youtube.com/@inovatecufsm">
+                            <i class='fab fa-youtube-square' style='font-size:36px'></i>
+                        </a>
+                        <a style="text-decoration: none;" href="https://www.linkedin.com/company/inovatec-ufsm/">
+                            <i class='fab fa-linkedin' style='font-size:36px'></i>
+                        </a>
+                        <a style="text-decoration: none;" href="https://www.ufsm.br/orgaos-suplementares/inovatec/busca/?q=&rss=true&area=post&sites%5B%5D=884">
+                            <i class='fa fa-rss-square' style='font-size:36px'></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <p class="m-1" style="font-size:16px">Você está aqui: <a href="https://www.ufsm.br/" style="text-decoration: none;">UFSM</a> > <a href="https://www.ufsm.br/orgaos-suplementares/inovatec" style="text-decoration: none;">InovaTec</a> > Startups</p>
+    </div>
+    <div class="container-fluid text-center inova-empresas">
+        <h1 style="font-size:29.732px; font-weight: 600px;">Empresas Incubadas</h1>
+        <h2 class="nome-empresa">Agtech</h2>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://www.instagram.com/inocular_solucoesagricolas/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/03/Logo-Inocular-nova-Photoroom.png-Photoroom-300x212.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://bioagreen.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/04/image-150x150.jpg">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.austertecnologia.com/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/Ativo-2-300x187.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.facebook.com/profile.php?id=100091943823161&mibextid=ZbWKwL">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/05/WhatsApp-Image-2023-03-27-at-3.26.42-PM-1024x800.jpeg">
+                </a>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://spraysolutions.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/09/2022-09-26-300x169.jpg">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.cropsteam.com/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/Logo-Crops-Team-PNG-sem-Fundo-1-300x255.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.qpmudas.com.br/catalog/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/qpmudas_cor-300x290-2.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://zeit.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/02/Nova-Zeit-preto-1024x576.png">
+                </a>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://modumdobrasil.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/09/modum-300x147.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://linktr.ee/farm360">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/05/Logo-Farm-360-300x211.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://performancevegetal.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/PerformanceVegetal_cor-01-300x261-2.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.lupora.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/02/415437166_122118248930136902_3230427321277764122_n.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://ingalagrotecnologia.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/cropped-Logomarca-Ingal-Fertilizantes-300x221-1.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.maissojacapacita.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/logo_compressed-1.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/02/LOGO-empresa-bion-300x154.jpg">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://verden.agr.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/02/logo-empresa-verden-.png">
+                </a>
+            </div>
+        </div>
+        <h2 class="nome-empresa">SaaS</h2>
+        <div class="row m-1">
+            <div class="col-sm-3">
+                <a href="#">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/02/motorhub-1024x724.jpg">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <h2 class="nome-empresa">FoodTech</h2>
+        <div class="row m-1">
+            <div class="col-sm-3">
+                <a href="https://weecaps.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/logo-weecaps-verde-234x300.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.auftek.com/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/03/logo-completa-300x113.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://oliveplus.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/09/logo-site-1-768x255.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <h2 class="nome-empresa">EduTech</h2>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://kreska.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/03/logo-1-272x182.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/02/logo-empresa-colina-300x300.jpg">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/03/0.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <h2 class="nome-empresa">Indústria 4.0</h2>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://www.g2wsistemas.com/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/G2W_Logo_PT_azul_fundo_branco_Solidworks-300x104.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://syntesis.it/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/logo-syntesis-1.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <h2 class="nome-empresa">Software/Hardware</h2>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://getcommerce.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/Get-commerce-Secundario-Fundo-Claro-300x193-1.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.instabov.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/Marca_InstaBov_FundoBranco_V1-1-300x122.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/03/WhatsApp-Image-2022-09-23-at-10.25.15-300x168.jpeg">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://chartei.com/edu">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/05/png_20230410_102658_0000-1-2-1024x576.png">
+                </a>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://www.mobartapp.com/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/001-Mobart_marca_preto_fundobranco-1-150x150.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://qironrobotics.com/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/IMG-20221129-WA0005-300x300.jpg">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.biodos.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/09/Logo_BioDos-removebg-preview-300x217.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://instagram.com/gestfair?igshid=YmMyMTA2M2Y=">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/05/GESTFAIR-colorida-1-1-300x300.png">
+                </a>
+            </div>
+        </div>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="#">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/09/04-Logotipo-Engesa-SA-300x102.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://softaliza.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/SOFTALIZA-MARCA-HORIZONTAL-Negativado-Preto@2x-1-300x89.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://zorya.cc/pt_br/">
+                    <img style="background-color: black;" class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/05/zorya-1.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <h2 class="nome-empresa">Tecnologias Sustentáveis</h2>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://foxiot.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/logo-preta-laranja-1-1-300x127.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <h2 class="nome-empresa">Terceiro Setor</h2>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://souparte.org/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2023/12/souparte_cor-300x148-2.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+        <h2 class="nome-empresa">Varejo</h2>
+        <div class="row m-5">
+            <div class="col-sm-3">
+                <a href="https://www.horusgastrogenius.com.br/">
+                    <img class="img-fluid" src="https://www.ufsm.br/app/uploads/sites/884/2024/02/Horus-.png">
+                </a>
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid text-end">
+        <a href="#" style="color:#204c90; text-decoration: none; font-size: 16px;">
+            <i class="fa fa-chevron-up"></i>
+            Voltar para o topo
+        </a>
+    </div>
+
+    <div class="container-fluid inova-footer">
+        <div class="row" style="border-bottom: 1px solid #4D5F89; margin-left: 20px; margin-right: 20px;">
+            <div class="col-sm-11">
+                <p style="font-size: 20px; font-weight: 500; margin-top: 20px; margin-left: 20px;">REDES SOCIAIS:<br>
+                    <a class="text-white" style="text-decoration: none;" href="https://www.instagram.com/inovatec.ufsm/">
+                        <i class='fab fa-instagram' style='font-size:36px'></i>
+                    </a>
+                    <a class="text-white" style="text-decoration: none;" href="https://www.facebook.com/profile.php?id=100085755794293">
+                        <i class='fab fa-facebook-square' style='font-size:36px'></i>
+                    </a>
+                    <a class="text-white" style="text-decoration: none;" href="https://www.youtube.com/@inovatecufsm">
+                        <i class='fab fa-youtube-square' style='font-size:36px'></i>
+                    </a>
+                    <a class="text-white" style="text-decoration: none;" href="https://www.linkedin.com/company/inovatec-ufsm/">
+                        <i class='fab fa-linkedin' style='font-size:36px'></i>
+                    </a>
+                    <a class="text-white" style="text-decoration: none;" href="https://www.ufsm.br/orgaos-suplementares/inovatec/busca/?q=&rss=true&area=post&sites%5B%5D=884">
+                        <i class='fa fa-rss-square' style='font-size:36px'></i>
+                    </a>
+                </p>
+            </div>
+            <div class="col-sm-1">
+                <img src="https://www.ufsm.br/app/themes/ufsm/images/ufsm-60-anos.png" alt="Imagem do selo comemorativo dos 60 anos de UFSM." style="height: 70px; max-height: 70px; margin-top: 20px; margin-bottom: 20px;">
+            </div>
+        </div>
+        <div class="row" style="border-bottom: 1px solid #4D5F89; margin-left: 20px; margin-right: 20px;">
+            <div class="col-sm-4">
+                <p style="font-size: 20px; font-weight: 500; margin-top: 20px; margin-left: 20px;">CAMPUS SEDE</p>
+                <p style="font-size: 16px; font-weight: 400; margin-top: 20px; margin-left: 20px;">Av. Roraima nº 1000<br>
+                    Cidade Universitária<br>
+                    Bairro Camobi<br>
+                    Santa Maria - RS<br>
+                    CEP: 97105-900<br>
+                    +55 (55) 3220-8000</p>
+            </div>
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-4">
+                <p style="font-size: 20px; font-weight: 500; margin-top: 20px; margin-left: 20px;">INOVATEC UFSM</p>
+                <p style="font-size: 16px; font-weight: 400; margin-top: 20px; margin-left: 20px;">Centro de Exposições<br>
+                    Prédio 61H<br>
+                    Bairro Camobi<br>
+                    Santa Maria - RS</p>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid last-footer">
+        <div class="row">
+            <div class="col-sm-2">
+                <p style="text-align: center; color: rgb(204,204,204); margin: 12px; font-size: 14px;">
+                <a href="https://www.ufsm.br/acessoainformacao" style="color: white; text-decoration: none;">Acesso à informação</a>
+                </p>
+            </div>
+            <div class="col-sm-8">
+                <p style="text-align: center; color: rgb(204,204,204); margin: 12px; font-size: 14px;">Desenvolvido pelo aluno Matheus de Almeida para a disciplina de Desenvolvimento de Software para a Web</p>
+            </div>
+            <div class="col-sm-2">
+                <p style="text-align: center; color: rgb(204,204,204); margin: 12px; font-size: 14px;">2024 UFSM</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
