@@ -2,7 +2,7 @@
 
 ![Substitua a imagem ao lado por um screenshot do seu projeto](image.png "Screenshot do projeto")
 
-Acesso: Substitua este texto pela URL para acesso ao site publicado
+Acesso: https://elc1090.github.io/project1-2024a-matzalmeida/primeiro_projeto.html
 
 
 #### Desenvolvedor(a)
