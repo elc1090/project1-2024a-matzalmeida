@@ -29,7 +29,7 @@ O foco utilizado durante o remake foi alcançar uma página visualmente próxima
 
 - HTML
 - CSS
-- Bootstrap 5
+- Bootstrap 5(https://www.w3schools.com/bootstrap5/)
 
 #### Ambiente de desenvolvimento
 
